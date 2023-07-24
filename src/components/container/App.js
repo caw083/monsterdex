@@ -30,7 +30,7 @@ class App extends Component  {
 
       return (
         <div className="App">
-          <h1>Monster Roledex</h1>
+          <h1 id='title'>Monster Roledex</h1>
           <Searchbox onInputChange={this.onInputChange} />
           <Cardlist data={data}/>
         </div>

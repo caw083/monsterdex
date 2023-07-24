@@ -25,7 +25,7 @@ const AppHook = ()=>{
 
     return (
         <div className="App">
-          <h1>Monster Roledex</h1>
+          <h1 id='title'>Monster Roledex</h1>
           <Searchbox onInputChange={onInputChange} />
           <Cardlist data={filteredMonster}/>
         </div>        
