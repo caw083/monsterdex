@@ -7,10 +7,8 @@ import './App.css'
 const AppHook = ()=>{
     const [searchField, setSearchField] = useState('');
     const [monster, setMonster] = useState([]);
-    console.log('render');
 
     useEffect(() => {
-        console.log('effect');
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(result => setMonster(result))
@@ -24,7 +22,7 @@ const AppHook = ()=>{
     const filteredMonster = monster.filter((monster)=>{
         return monster.name.toLowerCase().includes(searchField)
       }); 
-      
+
     return (
         <div className="App">
           <h1>Monster Roledex</h1>
